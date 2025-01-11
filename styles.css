@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5; /* Fundo cinza claro */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Texto preto suave */
+}
+
+header {
+    background-color: #1a1a1a; /* Cor preta */
+    color: #fff;
+    text-align: center;
+    padding: 40px 0; /* Aumentar altura do banner */
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra no título */
+    font-family: 'Open Sans', sans-serif; /* Fonte personalizada */
+}
+
+h1 {
+    margin: 0;
+}
+
+.main-content {
+    text-align: left;
+    margin: 20px;
+}
+
+h2 {
+    color: #000; /* Cor preta */
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: left;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra no subtítulo */
+    font-family: 'Open Sans', sans-serif; /* Fonte personalizada */
+    text-decoration: underline; /* Sublinhado */
+}
+
+.cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #808080; /* Fundo cinza */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px; /* Bordas arredondadas */
+    margin: 10px;
+    text-align: left;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais forte ao passar o mouse */
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Bordas arredondadas na imagem */
+    margin-bottom: 10px;
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #000; /* Texto preto */
+    text-decoration: underline; /* Sublinhado */
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #000; /* Texto preto */
+}
+
+/* Estilos do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
